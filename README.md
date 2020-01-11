@@ -4,14 +4,14 @@ Automatic fan control based on CPU temperature using PWM signal
 ![alt text](./images/open_case.jpg)
 
 ## Create circuit
-Circuit sketch:
+Circuit sketch:  
 <img src="images/sketch.jpg"  height="200">
 
-Final circuit:
+Final circuit:  
 <img src="images/circuit.jpg"  height="250">
 
 ## Write Python script
-I used Python 3.5 for my code. See the code in fancontrol.py.
+I used Python 3.5 for my code. See the code in ```fancontrol.py```.
 
 
 ## Run script on startup
@@ -30,3 +30,10 @@ Add the following line to your crontab file which will always start to run in ba
 ...
 @reboot python /location/to/file/fancontrol.py /location/to/file/config.json
 ```
+
+## Config
+You can choose 2 different modes:
+1. PWM controlled fan - fan speeds for each temperature level are specified in config file
+2. Binary ON/OFF - turn ON/OFF temperature can be specified
+
+Option 1 can handle variable speeds, however you may hear some PWM noise, which is a deaden with a capacitor, depends also on the fan, how annoying is this phenomenon, so you can choose the other mode if you want to.  
