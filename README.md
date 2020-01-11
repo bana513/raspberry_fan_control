@@ -5,10 +5,18 @@ Automatic fan control based on CPU temperature using PWM signal
 
 ## Create circuit
 Circuit sketch:  
+  
 <img src="images/sketch.jpg"  height="200">
 
 Final circuit:  
+  
 <img src="images/circuit.jpg"  height="250">
+
+## Pinout
+I chose the GPIO pin 18 (pin 12) as it is the closest to power pins. However you can use other GPIO pins as well.  
+Raspberry Pi 2/3 pinout ():
+  
+<img src="https://camo.githubusercontent.com/c3197e779c0fbb43b610f7260099065c2c9629d1/68747470733a2f2f646f63732e6d6963726f736f66742e636f6d2f656e2d75732f77696e646f77732f696f742d636f72652f6d656469612f70696e6d617070696e67737270692f7270325f70696e6f75742e706e67"  width="500">
 
 ## Write Python script
 I used Python 3.5 for my code. See the code in ```fancontrol.py```.
