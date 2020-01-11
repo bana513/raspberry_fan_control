@@ -4,11 +4,12 @@ Automatic fan control based on CPU temperature using PWM signal
 ![alt text](./images/open_case.jpg)
 
 ## Create circuit
-Circuit sketch: 
-![alt text](./images/sketch.jpg)
+Circuit sketch:
+
+![alt text](./images/sketch.jpg =200x)
 
 Final circuit:
-![alt text](./images/circuit.jpg)
+![alt text](./images/circuit.jpg =250x)
 
 ## Write Python script
 I used Python 3.5 for my code. See the code in fancontrol.py.
