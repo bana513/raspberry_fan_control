@@ -1,0 +1,18 @@
+{
+  "use_pwm": true,
+  "non_pwm_temp": {
+    "temp_on" : 65,
+    "temp_off" : 60
+  },
+  "pwm_temp": {
+    "targets": [
+      [60, 10],
+      [64, 20],
+      [67, 50],
+      [70, 100]
+    ]
+  },
+  "fan_pin": 18,
+  "pwm_freq": 300000,
+  "refresh_interval": 3
+}
